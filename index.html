@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div id="password-screen">
+  <h2>Bu sayfa özel 💌</h2>
+  <p>Lütfen şifreyi gir:</p>
+  <input type="password" id="password-input" placeholder="Şifre" />
+  <button onclick="checkPassword()">Giriş Yap</button>
+  <p id="error-message" style="color: red; display: none;">Şifre yanlış 🙃</p>
+</div>
 <!-- Giriş Sahnesi -->
+
+<div id="main-content" style="display: none;">
 <div class="scene scene-active" id="scene-1">
   <h1>Merhaba Nisacım! ❤️</h1>
   <p>Bu anlamlı günde hikayemize baştan bi bakmamızı istedim. Hazır mısın bitanem?</p>
@@ -164,7 +173,7 @@
   <p>https://itu-itis23-hamsoglu22.github.io/termProject/game.html</p>
   <button onclick="prevScene()">← Geri</button>
 </div>
-
+</div>
 <!-- Dilersen buraya daha fazla anı ekleyebiliriz -->
 
   <script src="script.js"></script>
