@@ -77,3 +77,15 @@ function prevScene() {
   }
 }
 
+function checkPassword() {
+  const input = document.getElementById("password-input").value.trim().toLowerCase();
+  const errorMsg = document.getElementById("error-message");
+
+  if (input === "nisa5361") {
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  } else {
+    errorMsg.style.display = "block";
+  }
+}
+
