@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizim Hikayemiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Giriş Sahnesi -->
+<div class="scene scene-active" id="scene-1">
+  <h1>Merhaba Nisacım! ❤️</h1>
+  <p>Bu anlamlı günde hikayemize baştan bi bakmamızı istedim. Hazır mısın bitanem?</p>
+  <button onclick="nextScene()">Oluurrr Talhacımmm</button>
+  <button class="secondary-btn" onclick="fakeExit()">yok :(</button>
+  <div id="fake-exit-effect">💔 Çok kırıcısınn... yav şakacıktan bastığını biliom djksfksjd</div>
+</div>
+
+
+<!-- Tanıştığımız Gün -->
+<div class="scene" id="scene-2">
+  <h2>İlk Fotoğrafımız 30 Kasım 2024</h2>
+  <img src="assets/images/foto4.jpg" alt="İlk fotoğrafımız" />
+  <p>Biliyorsun bu fotoğrafın bizim için anlamı büyük.. Aynı zamanda ilk fotoğrafımız</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devam ett</button>
+</div>
+
+<!-- Anı Giriş Sahnesi -->
+<div class="scene" id="scene-3">
+  <audio id="memory-audio" src="assets/audio/ses1.mp3"></audio>
+  <h2>Birlikte ne güzel anılar biriktirdik değil mi Nisacım? Alttaki fotonun makaralığına böyle makara bi ses yakışırdı ama fsdlfjksdhflsdjfs</h2>
+  <img src="assets/images/foto2.jpg" alt="İlk fotoğrafımız" />
+  <p>Gel biraz yolculuğumuzu hatırlayalım.Hazırsan başlıyoruz komutanım</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button class="secondary-btn" onclick="playMemoryAudio(); ">Sesi Dinle :D</button>
+  <button onclick="nextScene()">Hadi hatırlayalım</button>
+</div>
+
+<!-- Anılar (foto1, foto2, ...) -->
+<div class="scene" id="scene-4">
+  <h2>31 Aralık 2024</h2>
+  <img src="assets/images/foto3.jpg" alt="Anı 1" />
+  <p>Belki de bu yola girerkenki en önemli günümüz Nisacımm. O gün bizim için 2 Ocak gününü hazırlayan bir gündü.</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-5">
+  <h2>İlk gün.. 2 Ocak 2025</h2>
+  <img src="assets/images/foto22.jpg" alt="Anı 2" />
+  <p>İlişkimizin ismini koyduğumuz gün.. Oraya gelirkenki heyecanımı ve bu fotoğraf için hissettiklerimi buraya yazacak kadar konuşmayı bilmiyorum..</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Bence bir sonraki fotoyu tahmin edebilirsinn devamm</button>
+</div>
+
+<div class="scene" id="scene-6">
+  <h2>Nerden bildiiinnnnn?</h2>
+  <img src="assets/images/foto8.jpg" alt="Anı 2" />
+  <p>Nerden bildim senin kirpiklerin ince olduğu için böyle uçlu rimel almayııı yok artıkk</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devam mıııı</button>
+</div>
+
+<div class="scene" id="scene-7">
+  <h2>Beraber ilk kahvaltımız deriz kii</h2>
+  <img src="assets/images/foto10.jpg" alt="Anı 2" />
+  <p>Beraber çok kahvaltılar yapmak nasip olur inşallah canımm.O kadar güzel bir fotoğraf kiii</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamss</button>
+</div>
+
+<div class="scene" id="scene-8">
+  <h2>Yav yine mi itüye geldinn</h2>
+  <img src="assets/images/foto6.jpg" alt="Anı 2" />
+  <p>HOŞGELDİNNNNNNN iyi ki geldinnn.</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devam daha var yaa</button>
+</div>
+
+
+<div class="scene" id="scene-9">
+  <h2>Beraber yürüyüşe gittikk</h2>
+  <img src="assets/images/foto11.jpg" alt="Anı 1" />
+  <p></p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-10">
+  <h2>Kütüp gittikk</h2>
+  <img src="assets/images/foto19.jpg" alt="Anı 1" />
+  <img src="assets/images/foto23.jpg" alt="Anı 1" />
+  <img src="assets/images/foto25.jpg" alt="Anı 1" />
+  <p></p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-11">
+  <h2>Gezmelere gittikk</h2>
+  <img src="assets/images/foto17.jpg" alt="Anı 1" />
+  <img src="assets/images/foto24.jpg" alt="Anı 1" />
+  <img src="assets/images/foto7.jpg" alt="Anı 1" />
+  <p></p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-12">
+  <h2>Çok ama çok ama çok güzel vakitler geçirdikk</h2>
+  <img src="assets/images/foto20.jpg" alt="Anı 1" />
+  <img src="assets/images/foto12.jpg" alt="Anı 1" />
+  <p></p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-13">
+  <h2>Nisacım</h2>
+  <div class="photo-row">
+    <div class="photo-box">
+      <img src="assets/images/foto13.jpg" alt="Sinirli" />
+      <p>- Bazen sinirli</p>
+    </div>
+    <div class="photo-box">
+      <img src="assets/images/foto15.jpg" alt="Şımarık" />
+      <p>– Bazen şımarık</p>
+    </div>
+    <div class="photo-box">
+      <img src="assets/images/foto14.jpg" alt="Tatlış" />
+      <p>– Ama genelde çookkk tatlış</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 1.5rem;">idi ama hep ama hep benim canımmm sevgilimdi</p>
+
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devammm</button>
+</div>
+
+
+<div class="scene" id="scene-14">
+  <h2>O gözler..</h2>
+  <img src="assets/images/foto5.jpg" alt="Anı 1" />
+  <p>Şöyle bir hediyede dünyalar güzeli gözlerine değinmemek olmazdııı kiii. Çok ama çok tatlılar</p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Devamm</button>
+</div>
+
+<div class="scene" id="scene-15">
+  <h2>İyi ki doğdun iyi ki benimlesin Nisacım</h2>
+  <img src="assets/images/foto21.jpg" alt="Anı 1" />
+  <p></p>
+  <button onclick="prevScene()">← Geri</button>
+  <button onclick="nextScene()">Sonuncuya doğru mu acaba?</button>
+</div>
+
+<div class="scene" id="scene-16">
+  <h2>Yavvv devamı var ama burada işimiz bitti.</h2>
+  <img src="assets/images/foto18.jpg" alt="Anı 1" />
+  <p>Bu anlamlı güne özel bize böyle bir günlük tarzı bir şey oluşturmak istemiştim. İnşallah buranın sayfalarını bol bol arttırmak nasip olur. Allah'ım sağlıklı mutlu huzurlu beraber nica yıllar nasip etsin. İyi ki varsın Nisacım ❤️ </p>
+  <p>Aşağıdaki linkte bir sürpriz var</p>
+  <p>https://itu-itis23-hamsoglu22.github.io/termProject/game.html</p>
+  <button onclick="prevScene()">← Geri</button>
+</div>
+
+<!-- Dilersen buraya daha fazla anı ekleyebiliriz -->
+
+  <script src="script.js"></script>
+</body>
+</html>
